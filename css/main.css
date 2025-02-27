@@ -618,9 +618,6 @@ footer .main_footer_copyright {
   padding-top: 14px;
   padding-bottom: 62.63px;
 }
-.social_links a {
-  margin-inline-end: 23px;
-}
 .download {
   background: url(../images/download-bg.svg);
   background-color: transparent;
@@ -896,7 +893,7 @@ footer .main_footer_copyright {
   width: 16px;
 }
 .social_links a {
-  margin-inline-end: 10px;
+  margin-inline-end: 26px;
 }
 
 .social_links {

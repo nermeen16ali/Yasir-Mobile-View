@@ -22,9 +22,9 @@ const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function () {
-  menu.classList.toggle("active"); // فتح وإغلاق القائمة
-  menuToggle.classList.toggle("active"); // تغيير الأيقونة
-  document.body.classList.toggle("no-scroll"); // منع التمرير عند الفتح
+  menu.classList.toggle("active"); 
+  menuToggle.classList.toggle("active"); 
+  document.body.classList.toggle("no-scroll"); 
 });
 
 const createOdometer = (el, value) => {
