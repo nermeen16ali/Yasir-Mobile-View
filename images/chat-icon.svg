@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <g id="Chat_Icon" transform="translate(-1706.187 -873.187)">
+    <circle id="Chat_BG" cx="34.5" cy="34.5" r="34.5" transform="translate(1706.187 873.187)" fill="#22499d"/>
+    <path id="Chat_Icon-2" data-name="Chat_Icon" d="M166.652,112.845h-.01A18.658,18.658,0,0,0,150.9,141.517a2.342,2.342,0,0,1,.278,2.009l-1.965,5.861,6.176-1.975a2.33,2.33,0,0,1,1.885.235,18.512,18.512,0,0,0,9.381,2.531,18.733,18.733,0,0,0,17.681-24.784A18.464,18.464,0,0,0,166.652,112.845Z" transform="translate(1573.946 776.082)" fill="#fff"/>
+    <g id="Yassir_Icon" transform="translate(1727.714 901.141)">
+      <path id="Path_67923" data-name="Path 67923" d="M175.48,7.159l5.5-5.5L179.6.283a.9.9,0,0,0-1.268,0L175.48,3.137,173.337.995l-2.011,2.011Z" transform="translate(-155.221 -0.016)" fill="#c2cce5"/>
+      <path id="Path_67924" data-name="Path 67924" d="M154.02,43.97l-1.493-1.493,2.917-2.917,2.011,2.011-2.4,2.4a.732.732,0,0,1-1.035,0" transform="translate(-140.356 -31.28)" fill="#8499cb"/>
+      <rect id="Rectangle_38515" data-name="Rectangle 38515" width="3.733" height="2.844" transform="translate(15.349 8.019) rotate(-45)" fill="#8499cb"/>
+      <path id="Path_67925" data-name="Path 67925" d="M134.981.271a.909.909,0,0,0-1.285,0l-8.8,8.8-2.149-2.149-2.011,2.011,2.149,2.149h0l1.372,1.372a.9.9,0,0,0,1.278,0L136.349,1.639Z" transform="translate(-115.216 -0.004)" fill="#4966b2"/>
+      <path id="Path_67926" data-name="Path 67926" d="M110.877,1.635l-1.37-1.37a.906.906,0,0,0-1.282,0l-8.8,8.8L97.03,6.673a.905.905,0,0,0-1.28,0l-1.371,1.37,4.406,4.406a.905.905,0,0,0,1.28,0l1.371-1.371h0Z" transform="translate(-94.379 0)" fill="#13359a"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180.425" height="237" viewBox="0 0 180.425 237">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="-0.174" r="8.141" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eae7e1"/>
+      <stop offset="1" stop-color="#f0eee9"/>
+    </radialGradient>
+  </defs>
+  <path id="Card_03_Color_BG" d="M31,0H149.425a31,31,0,0,1,31,31V178a59,59,0,0,1-59,59H31A31,31,0,0,1,0,206V31A31,31,0,0,1,31,0Z" fill="url(#radial-gradient)"/>
+</svg>

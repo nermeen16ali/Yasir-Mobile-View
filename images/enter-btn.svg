@@ -1,0 +1,10 @@
+<svg id="Enter_BTN" xmlns="http://www.w3.org/2000/svg" width="40.319" height="40.318" viewBox="0 0 40.319 40.318">
+  <rect id="Rectangle_35275" data-name="Rectangle 35275" width="40.319" height="40.319" rx="20.159" transform="translate(0 0)" fill="#b39d74"/>
+  <g id="Arrow_Icon" transform="translate(9.181 9.057)">
+    <path id="Icon_akar-arrow-left" data-name="Icon akar-arrow-left" d="M10.6,7.5,6,12.1l4.6,4.6M6,12.1H16.512" transform="translate(-0.154 -0.997)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <g id="Ellipse_4513" data-name="Ellipse 4513" fill="none" stroke="#fff" stroke-width="1.5">
+      <circle cx="11.103" cy="11.103" r="11.103" stroke="none"/>
+      <circle cx="11.103" cy="11.103" r="10.353" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Group_109067" data-name="Group 109067" xmlns="http://www.w3.org/2000/svg" width="42.591" height="42.591" viewBox="0 0 42.591 42.591">
+  <rect id="Rectangle_35275" data-name="Rectangle 35275" width="42.591" height="42.591" rx="21.296" transform="translate(0 0)" fill="#22499d"/>
+  <g id="Arrow_Icon" transform="translate(9.699 9.567)">
+    <path id="Icon_akar-arrow-left" data-name="Icon akar-arrow-left" d="M10.858,7.5,6,12.358l4.858,4.858M6,12.358H17.1" transform="translate(0.176 -0.63)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <g id="Ellipse_4513" data-name="Ellipse 4513" fill="none" stroke="#fff" stroke-width="1.5">
+      <ellipse cx="11.729" cy="11.729" rx="11.729" ry="11.729" stroke="none"/>
+      <ellipse cx="11.729" cy="11.729" rx="10.979" ry="10.979" fill="none"/>
+    </g>
+  </g>
+</svg>
