@@ -118,8 +118,8 @@ li {
   transition: right 0.3s ease-in-out;
   z-index: 2000;
   color: var(--white-color);
-  padding-top: 67px;
-  padding-bottom: 81px;
+  padding-top: 177px;
+  padding-bottom: 99px;
   padding-inline-start: 5px;
 }
 
@@ -139,6 +139,12 @@ li {
   position: absolute;
   top: 41px;
   inset-inline-end: 29px;
+}
+body:has(.header.scrolled) .menu .login_btn {
+  top: 7px;
+}
+body:has(.header.scrolled) .menu {
+  padding-top: 130px;
 }
 .menu .login_btn img {
   margin-inline-end: 16.96px;
@@ -181,10 +187,6 @@ li {
 .no-scroll .menu-icon::before,
 .no-scroll .menu-icon span {
   background-color: var(--white-color);
-}
-
-.menu_content {
-  margin-top: 112px;
 }
 .menu-icon span {
   position: relative;
@@ -249,10 +251,10 @@ li {
   -webkit-backdrop-filter: blur(15px);
   height: 78px;
 }
-.header.scrolled .Yasir_logo{
+.header.scrolled .Yasir_logo {
   top: 14px;
 }
-.header.scrolled .switch_btn{
+.header.scrolled .switch_btn {
   top: 27.88px;
 }
 .header.scrolled .Yasir_logo img {
@@ -608,16 +610,13 @@ footer .main_footer_copyright {
   margin-top: 8.89px;
   display: inline-block;
 }
-.menu .main_footer_copyright span{
+.menu .main_footer_copyright span {
   margin-top: 10.5px;
 }
 .footer_wrapper {
   background-color: #eff5f7;
   padding-top: 14px;
   padding-bottom: 62.63px;
-}
-.social_links {
-  margin-bottom: 20px;
 }
 .social_links a {
   margin-inline-end: 23px;
@@ -895,10 +894,6 @@ footer .main_footer_copyright {
 }
 .go_back img {
   width: 16px;
-}
-.menu {
-  padding-top: 40px;
-  padding-bottom: 62px;
 }
 .social_links a {
   margin-inline-end: 10px;
