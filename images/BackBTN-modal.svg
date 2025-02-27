@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.118" height="20.436" viewBox="0 0 27.118 20.436">
+  <g id="BackBTN" transform="translate(0 0)">
+    <g id="Group_109053" data-name="Group 109053" transform="translate(15.764 20.436) rotate(-90)">
+      <path id="Path_87587" data-name="Path 87587" d="M0,1.46,1.223.237a.809.809,0,0,1,1.145,0L10.227,8.1l2.138-2.137a.808.808,0,0,1,1.143,0l1.224,1.224L10.8,11.117a.808.808,0,0,1-1.143,0L8.43,9.893h0Z" transform="translate(0 0)" fill="#13359a" opacity="0.469"/>
+      <path id="Path_87588" data-name="Path 87588" d="M14.732,1.46,13.509.237a.809.809,0,0,0-1.145,0L4.5,8.1,2.367,5.959a.808.808,0,0,0-1.143,0L0,7.182l3.934,3.935a.808.808,0,0,0,1.143,0L6.3,9.893h0Z" transform="translate(5.704)" fill="#13359a"/>
+    </g>
+    <rect id="Rectangle_52825" data-name="Rectangle 52825" width="24.493" height="2.598" transform="translate(0 8.907)" fill="#13359a"/>
+  </g>
+</svg>
