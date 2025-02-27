@@ -1,11 +1,3 @@
-// function openMenu() {
-//   document.body.classList.add("no-scroll");
-// }
-
-// function closeMenu() {
-//   document.body.classList.remove("no-scroll");
-// }
-
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
   let menu_icon = document.querySelector(".menu-icon");
@@ -17,38 +9,14 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
-
-// window.addEventListener("scroll", function () {
-//   let header = document.querySelector(".header");
-//   let menu_icon = document.querySelector(".menu-icon");
-
-//   let scrollThreshold = window.innerWidth <= 992 ? 32 : 32;
-
-//   if (window.scrollY > scrollThreshold) {
-//     menu_icon.classList.add("moveToTop");
-//     header.classList.add("scrolled");
-//   } else {
-//     menu_icon.classList.remove("moveToTop");
-//     header.classList.remove("scrolled");
-//   }
-// });
-
-// const openMenuBtn = document.getElementById("openMenuBtn");
-// const closeMenuBtn = document.getElementById("closeMenuBtn");
-// const menu = document.getElementById("menu");
-
-// function openMenu() {
-//   menu.classList.add("active");
-//   document.body.classList.add("no-scroll");
-// }
-
-// function closeMenu() {
-//   menu.classList.remove("active");
-//   document.body.classList.remove("no-scroll");
-// }
-
-// openMenuBtn.addEventListener("click", openMenu);
-// closeMenuBtn.addEventListener("click", closeMenu);
+document.querySelector(".learn_more").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollBy({
+    top: window.innerHeight / 10,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
