@@ -28,7 +28,7 @@ ul {
   --alt-dark-color: #b39d74;
   --text-color: #5e6d8c;
   --text-alt-color: #3d5862;
-  --box-shadow: 0px 7px 9px #6c5b3e0d;
+  /* --box-shadow: 0px 7px 9px #6c5b3e0d; */
   --bg-gradient: linear-gradient(152.22deg, #dde8ee 7.21%, #f7fafb 66.62%);
   --bg-gradient-lighten: linear-gradient(
     228.87deg,
@@ -60,12 +60,18 @@ li {
   font-size: 40px;
   color: var(--main-color);
 }
+.main_btn {
+  border: 0;
+  background-color: var(--bg-main-color);
+  color: var(--white-color);
+}
 .hero_section .section_heading_1 {
   color: var(--main-dark-color);
 }
 .section_heading_2 {
-  font-size: var(--font-size-heading-2);
+  font-size: 38px;
   font-weight: 500;
+  line-height: 48px;
   white-space: nowrap;
 }
 .main_colored_heading {
@@ -89,6 +95,9 @@ li {
 }
 .hero_section .highlighted_text img {
   inset-inline-start: -10px;
+}
+.login .section_heading_2 .highlighted_text img {
+  inset-inline-start: -5px;
 }
 .chat_button {
   position: fixed;
@@ -831,18 +840,18 @@ footer .main_footer_copyright {
 .login {
   padding: 16px;
 }
-.main_lg_btn {
-  font-size: 15px;
-  gap: 9.5px;
-  padding-inline: 22px;
-  border-radius: 28px;
-  box-shadow: var(--box-shadow);
-  border-radius: 48px;
+.main_login_btn {
+  font-size: 19px;
+  gap: 19.72px;
+  padding-inline-start: 34.41px;
+  padding-inline-end: 12px;
+  border-radius: 38px;
+  box-shadow: 0px 7px 9px 0px #6c5b3e0d;
   display: flex;
   align-items: center;
   margin-inline: auto;
 }
-.main_lg_btn lottie-player {
+.main_login_btn lottie-player {
   width: 50px;
   height: 50px;
   transform: matrix(0, 1, -1, 0, 0, 0);
@@ -852,37 +861,14 @@ footer .main_footer_copyright {
   width: 100%;
   padding-bottom: 20px;
 }
-.request_support {
-  margin-bottom: 21px;
-}
 .toggle-password {
   inset-inline-end: 22px;
 }
 .login main {
   padding-top: 12%;
 }
-.subtitle {
-  margin-top: 20px;
-  margin-bottom: 26px;
-}
-.input_group .form-control {
-  height: 48px;
-  padding-inline-start: 57px;
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
 .request_support a {
   padding-inline-start: 6px;
-}
-.input_group_icon img,
-.toggle-password img {
-  width: 20px;
-}
-.go_back span {
-  display: none;
-}
-.go_back img {
-  width: 16px;
 }
 .social_links a {
   margin-inline-end: 26px;
@@ -928,6 +914,9 @@ footer .main_footer_copyright {
 .footer_logo {
   margin-bottom: 28px;
 }
+.login .footer_logo {
+  margin-bottom: 10.66px;
+}
 /*================================= Login Page ====================================*/
 .login {
   padding-top: 45px;
@@ -954,11 +943,11 @@ footer .main_footer_copyright {
   color: var(--main-dark-color-B);
 }
 .subtitle {
-  font-size: 29px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: 500;
   color: var(--main-dark-color);
-  margin-top: 24px;
-  margin-bottom: 42px;
+  margin-top: 11.81px;
+  margin-bottom: 31.82px;
 }
 .login_form {
   max-width: 522px;
@@ -967,20 +956,23 @@ footer .main_footer_copyright {
 .input_group {
   position: relative;
   width: 100%;
+  margin-bottom: 16.73px;
 }
 .input_group .form-control {
-  padding: 16px;
-  padding-inline-start: 75px;
+  padding-inline-start: 65.85px;
   background-color: var(--white-color);
-  height: 76px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-raduis-large);
+  color: var(--main-dark-color-B);
+  height: 60.53px;
+  box-shadow: 0px 7px 9px 0px #6c5b3e0d;
+  border-radius: 38px;
   font-size: 25px;
   border: 0;
-  margin-bottom: 21px;
+  padding-top: 15.96px;
+  padding-bottom: 20.57px;
 }
 .input_group .form-control::placeholder {
   color: #3d586240;
+  font-size: 19px;
 }
 .input_group span {
   position: absolute;
@@ -990,10 +982,6 @@ footer .main_footer_copyright {
 .input_group_icon {
   inset-inline-start: 22px;
 }
-.form-control {
-  padding: 10px;
-  padding-inline-end: 30px;
-}
 
 .toggle-password {
   cursor: pointer;
@@ -1001,13 +989,17 @@ footer .main_footer_copyright {
   inset-inline-end: 36px;
 }
 .request_support {
-  padding-top: 11px;
+  padding-top: 8.79px;
   color: var(--text-alt-color);
-  line-height: 21.25px;
+  line-height: 16px;
   font-weight: 300;
-  margin-bottom: 37px;
+  font-size: 13px;
+  margin-bottom: 30.93px;
 }
 .request_support a {
   color: var(--alt-text-color);
-  padding-inline-start: 12px;
+  padding-inline-start: 8px;
+}
+.request_support a img {
+  margin-bottom: 2px;
 }
