@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header");
   let menu_icon = document.querySelector(".menu-icon");
-  if (window.scrollY > 32) {
+  if (window.scrollY > 12) {
     menu_icon.classList.add("moveToTop");
     header.classList.add("scrolled");
   } else {
@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
 document.querySelector(".learn_more").addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollBy({
-    top: window.innerHeight / 10,
+    top: window.innerHeight / 30,
     left: 0,
     behavior: "smooth",
   });

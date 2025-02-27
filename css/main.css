@@ -443,23 +443,12 @@ body:has(.header) {
   cursor: pointer;
 }
 .services {
-  background-image: url(../images/Services-bg.svg);
+  background-image: url(../images/Direct-Services-BG.png);
   background-repeat: no-repeat;
   background-position: top;
   margin-top: 46px;
   padding-top: 27px;
   border-radius: 0px 0px 91px 0px;
-  /* background: radial-gradient(
-    73.4% 132.85% at 95.7% 162.46%,
-    rgba(174, 158, 121, 0.431) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
-  /* background: radial-gradient(
-    286.3% 117.38% at 122% 36.41%,
-    rgba(174, 158, 121, 0.431) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
-
   padding-bottom: 21px;
 }
 .services_header .highlighted_text img {
@@ -724,7 +713,8 @@ footer .main_footer_copyright {
 .faq {
   padding-top: 66.5px;
   padding-bottom: 39px;
-  background-image: url(../images/FAQ-Section-BG.svg);
+  /* background-image: url(../images/FAQ-Section-BG.svg); */
+  background-image: url(../images/FAQ-Section-BG.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
