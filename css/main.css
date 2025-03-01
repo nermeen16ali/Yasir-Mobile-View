@@ -104,6 +104,7 @@ li {
   z-index: 9999999;
   bottom: 26px;
   inset-inline-start: 26px;
+  inset-inline-start: 20px;
   cursor: pointer;
 }
 .no-scroll {
@@ -188,6 +189,11 @@ body:has(.header.scrolled) .menu {
   top: 63px;
   inset-inline-start: 28px;
   transition: all 0.3s ease-in-out;
+}
+body:has(.login) .menu-icon {
+  position: relative;
+  top: unset;
+  inset-inline-start: unset;
 }
 .menu-icon.moveToTop {
   top: 27px;
@@ -274,7 +280,6 @@ body:has(.header.scrolled) .menu {
   opacity: 0;
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-
 
 /*================================= Home Page ====================================*/
 .header {
@@ -854,7 +859,7 @@ footer .main_footer_copyright {
 .accordion-button:not(.collapsed)::after {
   margin-left: unset;
   margin-right: auto;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   background-size: 14px;
   background-position: center;
 }
@@ -887,15 +892,8 @@ footer .main_footer_copyright {
   transform: matrix(0, 1, -1, 0, 0, 0);
   opacity: 1;
 }
-/* .login footer {
-  width: 100%;
-  padding-bottom: 20px;
-} */
 .toggle-password {
   inset-inline-end: 22px;
-}
-.login main {
-  padding-top: 12%;
 }
 .request_support a {
   padding-inline-start: 6px;
@@ -945,8 +943,14 @@ footer .main_footer_copyright {
   position: relative;
   padding-bottom: 280.8px;
 }
+.branch_page {
+  padding-bottom: 120px;
+}
 .login main {
   padding-top: 80px;
+}
+.session main {
+  padding-top: 35.75px;
 }
 .login footer {
   position: absolute;
@@ -1001,6 +1005,7 @@ footer .main_footer_copyright {
 .input_group .form-control::placeholder {
   color: #3d586240;
   font-size: 19px;
+  font-weight: 400;
 }
 .input_group span {
   position: absolute;
@@ -1177,4 +1182,225 @@ footer .main_footer_copyright {
 }
 .hip_img {
   transform: translateX(24px);
+}
+.small_section_title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--main-dark-color-B);
+  margin-top: 8.67px;
+  margin-bottom: 29.77px;
+}
+.branch_page .accordion-item {
+  background-color: rgba(255, 255, 255, 0.28);
+  border: 0 !important;
+  margin-bottom: 21.56px;
+}
+.judge {
+  position: relative;
+  margin-inline-end: 16.5px;
+}
+.judge img {
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+.judge span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cb3131;
+  color: var(--white-color);
+  font-size: 13px;
+  width: 26px;
+  font-weight: 400;
+  height: 26px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  inset-inline-start: -2px;
+}
+.judge_name {
+  color: #09183d;
+}
+.judge_name .grayed_text {
+  color: #4e717e;
+  font-weight: 300;
+  padding-inline-end: 5.27px;
+}
+.judge_position {
+  display: block;
+  margin-top: 5px;
+  color: #4d717e;
+  font-size: 13px;
+  padding: 8.29px 13px;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  width: fit-content;
+}
+.dash_card {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 31px;
+}
+.dash_card h3 {
+  color: var(--main-dark-color-B);
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 500;
+}
+.dash_card p {
+  color: #577c8e;
+  font-size: 15px;
+  font-weight: 300;
+}
+.main_dash_card {
+  padding-top: 31.03px;
+  padding-bottom: 50.84px;
+  margin-bottom: 17.72px;
+  position: relative;
+}
+.main_dash_card::before {
+  content: "";
+  position: absolute;
+  bottom: -3.81px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 85%;
+  height: 94.06px;
+  background-color: rgba(179, 157, 116, 0.9);
+  border-radius: 31px;
+  display: none;
+}
+.main_dash_card h3 {
+  margin-top: 9.74px;
+  margin-bottom: 8.07px;
+}
+.main_dash_card:hover {
+  background-color: var(--bg-main-color);
+}
+.main_dash_card:hover::before {
+  display: block;
+}
+.main_dash_card:hover h3,
+.main_dash_card:hover p {
+  color: var(--white-color);
+}
+
+.dash_cards {
+  gap: 16.53px;
+}
+.calc_dash {
+  padding-top: 37.44px;
+  padding-bottom: 56.12px;
+}
+.dash_cards a {
+  height: 229.55px;
+  flex: 1;
+}
+.search_card {
+  padding-top: 39.44px;
+  padding-bottom: 60.12px;
+}
+.search_card h3 {
+  margin-top: 27.91px;
+  margin-bottom: 17px;
+}
+.calc_dash h3 {
+  margin-top: 10.68px;
+  margin-bottom: 5px;
+}
+.header_heading {
+  font-size: 24px;
+  color: var(--main-dark-color-B);
+  font-weight: 500;
+}
+.alt_input.form-control {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.77);
+  height: 51.75px;
+}
+.session .alt_input {
+  margin-bottom: 23.42px;
+}
+.status {
+  color: var(--main-dark-color-B);
+  font-size: 21px;
+}
+.session_status {
+  box-shadow: 0px 7px 9px 0px rgba(108, 91, 62, 0.05);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 38px;
+  margin-bottom: 20.28px;
+  padding-inline-start: 10px;
+  padding-inline-end: 11px;
+  padding-bottom: 12px;
+  padding-top: 11.22px;
+}
+.session_details {
+  margin-top: 7.5px;
+  padding-inline-start: 8.77px;
+  padding-inline-end: 28.89px;
+}
+.session_indicator {
+  padding-inline-start: 8.77px;
+}
+.session_status .main_btn {
+  width: 100%;
+  padding-bottom: 18px;
+  padding-top: 10px;
+  border-radius: 31px;
+  line-height: 29px;
+  font-size: 23px;
+  margin-top: 19.22px;
+}
+.session_status .main_btn img {
+  margin-inline-end: 15.05px;
+  margin-top: 3px;
+}
+.light_gray_text {
+  display: block;
+  color: var(--text-color);
+  font-size: 15px;
+  /* margin-bottom: 3.22px; */
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+.session_status h4 {
+  font-size: 19px;
+  color: var(--main-dark-color-B);
+  font-weight: 400;
+}
+.session_status h5 {
+  color: var(--main-dark-color-B);
+  font-size: 17px;
+  font-weight: 400;
+}
+.status {
+  height: 57px;
+  width: 121.55px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10.16px;
+}
+.session_status.positive .status {
+  background-color: rgba(103, 154, 74, 0.034);
+}
+.session_status.negative .status {
+  background: rgba(142, 44, 44, 0.034);
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  width: 20px;
+  height: 20px;
+}
+.branch_page .accordion-button::after {
+  background-image: url(../images/colspaned-icon-session.svg);
+}
+.branch_page .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/not-collaspaned-btn-icon.svg);
+  transform: rotate(0deg);
 }
