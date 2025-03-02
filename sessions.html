@@ -41,7 +41,7 @@
                     <input type="text" class="form-control alt_input"
                         placeholder="فلتر سريع، يُرجى كتابة أي كلمة هنا…">
                 </div>
-                <div class="session_status positive">
+                <div class="session_status positive session_items">
                     <div
                         class="d-flex align-items-center justify-content-between session_indicator">
                         <div>
@@ -68,12 +68,13 @@
                             <h5>الأربعاء</h5>
                         </div>
                     </div>
-                    <button class="main_btn">
+                    <button class="main_btn" data-bs-toggle="modal"
+                        data-bs-target="#modalPositive">
                         <img src="images/view-icon.svg" alt>
                         <span> عرض</span>
                     </button>
                 </div>
-                <div class="session_status negative">
+                <div class="session_status negative session_items">
                     <div
                         class="d-flex align-items-center justify-content-between session_indicator">
                         <div>
@@ -100,7 +101,8 @@
                             <h5>الأربعاء</h5>
                         </div>
                     </div>
-                    <button class="main_btn">
+                    <button class="main_btn" data-bs-toggle="modal"
+                        data-bs-target="#modalNegative">
                         <img src="images/view-icon.svg" alt>
                         <span> عرض</span>
                     </button>
@@ -124,7 +126,741 @@
         <div class="chat_button">
             <img src="images/chat-icon.svg" alt="Chat">
         </div>
+        <!--positive modal-->
+        <div class="modal session_modal fade" id="modalPositive" tabindex="-1"
+            aria-labelledby="modal1Label" aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content session_items">
+                    <div class="modal-header align-items-start">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab"
+                                role="tablist">
+                                <button
+                                    class="nav-link active"
+                                    id="nav-individuals-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-individuals"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-individuals"
+                                    aria-selected="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        id="Icon_ionic-ios-close-circle-outline"
+                                        data-name="Icon ionic-ios-close-circle-outline"
+                                        width="24.579" height="24.579"
+                                        viewBox="0 0 24.579 24.579">
+                                        <path id="Path_61055"
+                                            data-name="Path 61055"
+                                            d="M12.289,1.654a10.637,10.637,0,0,1,7.521,18.156A10.637,10.637,0,0,1,4.768,4.768a10.565,10.565,0,0,1,7.521-3.114m0-1.654A12.289,12.289,0,1,0,24.579,12.289,12.287,12.287,0,0,0,12.289,0Z"
+                                            transform="translate(0 0)"
+                                            fill="#9a7a44" />
+                                    </svg>
+                                    <br>
+                                    جلسات <br>الدائرة
+                                </button>
 
+                                <button
+                                    class="nav-link"
+                                    id="nav-moj-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-moj"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-moj"
+                                    aria-selected="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="26.211" height="21.818"
+                                        viewBox="0 0 26.211 21.818">
+                                        <defs>
+                                            <clippath id="clip-path">
+                                                <rect id="Rectangle_35443"
+                                                    data-name="Rectangle 35443"
+                                                    width="26.211"
+                                                    height="21.818"
+                                                    fill="#0b3443" />
+                                            </clippath>
+                                        </defs>
+                                        <g id="Group_97450"
+                                            data-name="Group 97450"
+                                            opacity="0.33">
+                                            <g id="Group_97450-2"
+                                                data-name="Group 97450"
+                                                clip-path="url(#clip-path)">
+                                                <path id="Path_61241"
+                                                    data-name="Path 61241"
+                                                    d="M10.23,18.913a10.587,10.587,0,0,1-.156,1.2,2.231,2.231,0,0,1-3.526,1.238c-1.226-.989-2.386-2.061-3.575-3.1Q1.93,17.341.89,16.43a2.386,2.386,0,0,1-.1-3.627C2.655,11.127,4.557,9.487,6.45,7.837a2.082,2.082,0,0,1,2.308-.344,2.194,2.194,0,0,1,1.394,1.89c.031.251.031.5.049.814h6.292c.736,0,.963.224.969.949,0,.328-.008.655,0,.983a.918.918,0,0,0,.522.887.882.882,0,0,0,1.027-.229q2.626-2.332,5.259-4.658c.682-.605.674-1.1,0-1.69Q21.682,4.151,19.1,1.856c-.283-.25-.552-.514-1-.356a.776.776,0,0,0-.586.666c-.043.421-.04.846-.049,1.269-.014.683-.245.918-.927.919q-2.367,0-4.734,0c-.526,0-.8-.208-.837-.614-.052-.525.226-.816.813-.819,1.275-.007,2.549,0,3.823,0h.422c.015-.283.021-.535.043-.786a2.167,2.167,0,0,1,1.328-1.9,2.043,2.043,0,0,1,2.263.226c1.233,1.021,2.421,2.1,3.625,3.152.693.608,1.39,1.212,2.066,1.839a2.377,2.377,0,0,1-.009,3.672Q22.685,11.509,20,13.855a2.294,2.294,0,0,1-3.692-.591,4.269,4.269,0,0,1-.255-1.156,2.948,2.948,0,0,1,0-.475H9.72c-.742,0-.947-.208-.958-.949a7.537,7.537,0,0,0-.049-1.2.823.823,0,0,0-1.425-.5q-2.764,2.424-5.5,4.875a.891.891,0,0,0,0,1.4q2.742,2.448,5.5,4.874a.833.833,0,0,0,1.431-.513,8.615,8.615,0,0,0,.049-1.268c.016-.645.24-.873.885-.875q2.367,0,4.734,0c.521,0,.778.169.864.55.113.5-.233.88-.819.883-1.25.006-2.5,0-3.751,0H10.23"
+                                                    transform="translate(0 0)"
+                                                    fill="#0b3443" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <br>
+                                    توزيع <br>الأحكام
+                                </button>
+                                <button
+                                    class="nav-link"
+                                    id="nav-prosecution-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-prosecution"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-prosecution"
+                                    aria-selected="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21.899" height="20.309"
+                                        viewBox="0 0 21.899 20.309">
+                                        <defs>
+                                            <clippath id="clip-path">
+                                                <rect id="Rectangle_52859"
+                                                    data-name="Rectangle 52859"
+                                                    width="21.899"
+                                                    height="20.309"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                            </clippath>
+                                        </defs>
+                                        <g id="Group_109443"
+                                            data-name="Group 109443"
+                                            opacity="0.33">
+                                            <g id="Group_109442"
+                                                data-name="Group 109442"
+                                                clip-path="url(#clip-path)">
+                                                <path id="Path_91569"
+                                                    data-name="Path 91569"
+                                                    d="M2.178,4.992C3.577,3.77,4.71,2.214,6.329,1.254,11-1.516,17.295.525,19.817,5.208c.371.689.991,1.772.046,2.3-1.239.7-1.681-.886-2.163-1.641A7.871,7.871,0,0,0,8.54,2.592C6.573,3.3,5.222,5.1,3.778,6.518H6.287a2.243,2.243,0,0,1,.656.289,1.091,1.091,0,0,1-.386,1.8,32.716,32.716,0,0,1-5.292.1C.7,8.653.144,8.428.067,7.792-.137,6.1.2,3.961.1,2.226a1.086,1.086,0,0,1,1.71-.538,2.641,2.641,0,0,1,.367.578Z"
+                                                    transform="translate(0.001 -0.001)"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                                <path id="Path_91570"
+                                                    data-name="Path 91570"
+                                                    d="M28.621,83.09c-.127-.032-.145.052-.219.109-1.313,1.005-2.228,2.479-3.758,3.44-4.6,2.894-10.808.985-13.509-3.555-.313-.526-.885-1.484-.642-2.084a1.443,1.443,0,0,1,.725-.583c1.163-.241,1.277.761,1.735,1.5a7.948,7.948,0,0,0,8.527,3.736c2.391-.568,3.9-2.506,5.54-4.167H24.512a2.211,2.211,0,0,1-.655-.29,1.066,1.066,0,0,1,.385-1.8,32.732,32.732,0,0,1,5.292-.1c.623.054,1.116.3,1.2.982a37.173,37.173,0,0,1-.034,5.421,1.058,1.058,0,0,1-1.709.609,1.532,1.532,0,0,1-.368-.5Z"
+                                                    transform="translate(-8.915 -67.704)"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <br>
+                                    الأحكام <br>المعدلة
+                                </button>
+                            </div>
+                        </nav>
+                        <button type="button" class="bg-transparent border-0"
+                            data-bs-dismiss="modal" aria-label="إغلاق"><img
+                                src="images/modal-close.svg" alt></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div
+                                class="tab-pane fade active show"
+                                id="nav-individuals"
+                                role="tabpanel"
+                                aria-labelledby="nav-individuals-tab">
+                                <div
+                                    class="session_indicator">
+                                    <div>
+                                        <span
+                                            class="light_gray_text">المحكمة</span>
+                                        <h4>المحكمة الكلية</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between session_details">
+                                    <div>
+                                        <span
+                                            class="light_gray_text">النوع</span>
+                                        <h5>امر اداء جزئي</h5>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="light_gray_text">الرقم</span>
+                                        <h5>05</h5>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="light_gray_text">اليوم</span>
+                                        <h5>الأربعاء</h5>
+                                    </div>
+                                </div>
+                                <div class="session_modal_details positive">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between session_modal_details_inner">
+                                        <div>
+                                            <span
+                                                class="the_status">المتداول</span>
+                                            <p>يوم 1 أكتوبر</p>
+                                            <span class="the_num">76</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">الجديدة</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">11</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">المحالة</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">0</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">القطعية</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">3</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center session_modal_details_inner_bottom">
+                                        <div>
+                                            <div class="the_status">المتداول
+                                                الحالي</div>
+                                            <span class="the_big_num">73</span>
+                                        </div>
+                                        <div class="indicator_box">
+                                            <span
+                                                class="completion_indicator">مؤشر
+                                                الإنجاز</span>
+                                            <div class="status">
+                                                <img
+                                                    src="images/positive-icon.svg"
+                                                    alt>
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="session_date_details text-center">
+                                    <div class="inner_session_date">
+                                        <span class="light_gray_text">تاريخ
+                                            الجلسة</span>
+                                        <p class="the_date">2025-02-05</p>
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="session_date_details_side colored">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">متداولة</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">17</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مؤجلة</span>
+                                                        <p>16</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">جديدة</span>
+                                                        <p>1</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محالة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="session_date_details_side">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">الأحكام</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">0</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محجوزة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مد
+                                                            أجل</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="main_btn">
+                                            <img src="images/view-icon.svg" alt>
+                                            <span> عرض</span>
+                                        </button>
+                                    </div>
+                                    <div class="inner_session_date">
+                                        <span class="light_gray_text">تاريخ
+                                            الجلسة</span>
+                                        <p class="the_date">2025-02-05</p>
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="session_date_details_side colored">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">متداولة</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">17</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مؤجلة</span>
+                                                        <p>16</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">جديدة</span>
+                                                        <p>1</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محالة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="session_date_details_side">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">الأحكام</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">0</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محجوزة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مد
+                                                            أجل</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="main_btn">
+                                            <img src="images/view-icon.svg" alt>
+                                            <span> عرض</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="tab-pane fade"
+                                id="nav-moj"
+                                role="tabpanel"
+                                aria-labelledby="nav-moj-tab">
+                                <div class="row">
+                                    محتوي توزيع الأحكام
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="nav-prosecution"
+                                role="tabpanel"
+                                aria-labelledby="nav-prosecution-tab">
+                                <div class="row">
+                                    محتوي الأحكام المعدلة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Negative modal-->
+        <div class="modal session_modal fade" id="modalNegative" tabindex="-1"
+            aria-labelledby="modal2Label" aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content session_items">
+                    <div class="modal-header align-items-start">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab"
+                                role="tablist">
+                                <button
+                                    class="nav-link active"
+                                    id="nav-individuals-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-individuals"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-individuals"
+                                    aria-selected="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        id="Icon_ionic-ios-close-circle-outline"
+                                        data-name="Icon ionic-ios-close-circle-outline"
+                                        width="24.579" height="24.579"
+                                        viewBox="0 0 24.579 24.579">
+                                        <path id="Path_61055"
+                                            data-name="Path 61055"
+                                            d="M12.289,1.654a10.637,10.637,0,0,1,7.521,18.156A10.637,10.637,0,0,1,4.768,4.768a10.565,10.565,0,0,1,7.521-3.114m0-1.654A12.289,12.289,0,1,0,24.579,12.289,12.287,12.287,0,0,0,12.289,0Z"
+                                            transform="translate(0 0)"
+                                            fill="#9a7a44" />
+                                    </svg>
+                                    <br>
+                                    جلسات <br>الدائرة
+                                </button>
+
+                                <button
+                                    class="nav-link"
+                                    id="nav-moj-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-moj"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-moj"
+                                    aria-selected="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="26.211" height="21.818"
+                                        viewBox="0 0 26.211 21.818">
+                                        <defs>
+                                            <clippath id="clip-path">
+                                                <rect id="Rectangle_35443"
+                                                    data-name="Rectangle 35443"
+                                                    width="26.211"
+                                                    height="21.818"
+                                                    fill="#0b3443" />
+                                            </clippath>
+                                        </defs>
+                                        <g id="Group_97450"
+                                            data-name="Group 97450"
+                                            opacity="0.33">
+                                            <g id="Group_97450-2"
+                                                data-name="Group 97450"
+                                                clip-path="url(#clip-path)">
+                                                <path id="Path_61241"
+                                                    data-name="Path 61241"
+                                                    d="M10.23,18.913a10.587,10.587,0,0,1-.156,1.2,2.231,2.231,0,0,1-3.526,1.238c-1.226-.989-2.386-2.061-3.575-3.1Q1.93,17.341.89,16.43a2.386,2.386,0,0,1-.1-3.627C2.655,11.127,4.557,9.487,6.45,7.837a2.082,2.082,0,0,1,2.308-.344,2.194,2.194,0,0,1,1.394,1.89c.031.251.031.5.049.814h6.292c.736,0,.963.224.969.949,0,.328-.008.655,0,.983a.918.918,0,0,0,.522.887.882.882,0,0,0,1.027-.229q2.626-2.332,5.259-4.658c.682-.605.674-1.1,0-1.69Q21.682,4.151,19.1,1.856c-.283-.25-.552-.514-1-.356a.776.776,0,0,0-.586.666c-.043.421-.04.846-.049,1.269-.014.683-.245.918-.927.919q-2.367,0-4.734,0c-.526,0-.8-.208-.837-.614-.052-.525.226-.816.813-.819,1.275-.007,2.549,0,3.823,0h.422c.015-.283.021-.535.043-.786a2.167,2.167,0,0,1,1.328-1.9,2.043,2.043,0,0,1,2.263.226c1.233,1.021,2.421,2.1,3.625,3.152.693.608,1.39,1.212,2.066,1.839a2.377,2.377,0,0,1-.009,3.672Q22.685,11.509,20,13.855a2.294,2.294,0,0,1-3.692-.591,4.269,4.269,0,0,1-.255-1.156,2.948,2.948,0,0,1,0-.475H9.72c-.742,0-.947-.208-.958-.949a7.537,7.537,0,0,0-.049-1.2.823.823,0,0,0-1.425-.5q-2.764,2.424-5.5,4.875a.891.891,0,0,0,0,1.4q2.742,2.448,5.5,4.874a.833.833,0,0,0,1.431-.513,8.615,8.615,0,0,0,.049-1.268c.016-.645.24-.873.885-.875q2.367,0,4.734,0c.521,0,.778.169.864.55.113.5-.233.88-.819.883-1.25.006-2.5,0-3.751,0H10.23"
+                                                    transform="translate(0 0)"
+                                                    fill="#0b3443" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <br>
+                                    توزيع <br>الأحكام
+                                </button>
+                                <button
+                                    class="nav-link"
+                                    id="nav-prosecution-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#nav-prosecution"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="nav-prosecution"
+                                    aria-selected="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21.899" height="20.309"
+                                        viewBox="0 0 21.899 20.309">
+                                        <defs>
+                                            <clippath id="clip-path">
+                                                <rect id="Rectangle_52859"
+                                                    data-name="Rectangle 52859"
+                                                    width="21.899"
+                                                    height="20.309"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                            </clippath>
+                                        </defs>
+                                        <g id="Group_109443"
+                                            data-name="Group 109443"
+                                            opacity="0.33">
+                                            <g id="Group_109442"
+                                                data-name="Group 109442"
+                                                clip-path="url(#clip-path)">
+                                                <path id="Path_91569"
+                                                    data-name="Path 91569"
+                                                    d="M2.178,4.992C3.577,3.77,4.71,2.214,6.329,1.254,11-1.516,17.295.525,19.817,5.208c.371.689.991,1.772.046,2.3-1.239.7-1.681-.886-2.163-1.641A7.871,7.871,0,0,0,8.54,2.592C6.573,3.3,5.222,5.1,3.778,6.518H6.287a2.243,2.243,0,0,1,.656.289,1.091,1.091,0,0,1-.386,1.8,32.716,32.716,0,0,1-5.292.1C.7,8.653.144,8.428.067,7.792-.137,6.1.2,3.961.1,2.226a1.086,1.086,0,0,1,1.71-.538,2.641,2.641,0,0,1,.367.578Z"
+                                                    transform="translate(0.001 -0.001)"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                                <path id="Path_91570"
+                                                    data-name="Path 91570"
+                                                    d="M28.621,83.09c-.127-.032-.145.052-.219.109-1.313,1.005-2.228,2.479-3.758,3.44-4.6,2.894-10.808.985-13.509-3.555-.313-.526-.885-1.484-.642-2.084a1.443,1.443,0,0,1,.725-.583c1.163-.241,1.277.761,1.735,1.5a7.948,7.948,0,0,0,8.527,3.736c2.391-.568,3.9-2.506,5.54-4.167H24.512a2.211,2.211,0,0,1-.655-.29,1.066,1.066,0,0,1,.385-1.8,32.732,32.732,0,0,1,5.292-.1c.623.054,1.116.3,1.2.982a37.173,37.173,0,0,1-.034,5.421,1.058,1.058,0,0,1-1.709.609,1.532,1.532,0,0,1-.368-.5Z"
+                                                    transform="translate(-8.915 -67.704)"
+                                                    fill="#0b3443" stroke="#fff"
+                                                    stroke-width="0.9" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <br>
+                                    الأحكام <br>المعدلة
+                                </button>
+                            </div>
+                        </nav>
+                        <button type="button" class="bg-transparent border-0"
+                            data-bs-dismiss="modal" aria-label="إغلاق"><img
+                                src="images/modal-close.svg" alt></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div
+                                class="tab-pane fade active show"
+                                id="nav-individuals"
+                                role="tabpanel"
+                                aria-labelledby="nav-individuals-tab">
+                                <div
+                                    class="session_indicator">
+                                    <div>
+                                        <span
+                                            class="light_gray_text">المحكمة</span>
+                                        <h4>المحكمة الكلية</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between session_details">
+                                    <div>
+                                        <span
+                                            class="light_gray_text">النوع</span>
+                                        <h5>امر اداء جزئي</h5>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="light_gray_text">الرقم</span>
+                                        <h5>05</h5>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="light_gray_text">اليوم</span>
+                                        <h5>الأربعاء</h5>
+                                    </div>
+                                </div>
+                                <div class="session_modal_details negative">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between session_modal_details_inner">
+                                        <div>
+                                            <span
+                                                class="the_status">المتداول</span>
+                                            <p>يوم 1 أكتوبر</p>
+                                            <span class="the_num">76</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">الجديدة</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">11</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">المحالة</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">0</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="the_status">القطعية</span>
+                                            <p>من 1 أكتوبر</p>
+                                            <span class="the_num">3</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center session_modal_details_inner_bottom">
+                                        <div>
+                                            <div class="the_status">المتداول
+                                                الحالي</div>
+                                            <span class="the_big_num">73</span>
+                                        </div>
+                                        <div class="indicator_box">
+                                            <span
+                                                class="completion_indicator">مؤشر
+                                                الإنجاز</span>
+                                            <div class="status">
+                                                <img src="images/negative-icon.svg" alt="">
+                                                15%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="session_date_details text-center">
+                                    <div class="inner_session_date">
+                                        <span class="light_gray_text">تاريخ
+                                            الجلسة</span>
+                                        <p class="the_date">2025-02-05</p>
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="session_date_details_side colored">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">متداولة</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">28</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مؤجلة</span>
+                                                        <p>22</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">جديدة</span>
+                                                        <p>6</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محالة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="session_date_details_side">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">الأحكام</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">0</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محجوزة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مد
+                                                            أجل</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="main_btn">
+                                            <img src="images/view-icon.svg" alt>
+                                            <span> عرض</span>
+                                        </button>
+                                    </div>
+                                    <div class="inner_session_date">
+                                        <span class="light_gray_text">تاريخ
+                                            الجلسة</span>
+                                        <p class="the_date">2025-02-05</p>
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="session_date_details_side colored">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">متداولة</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">17</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مؤجلة</span>
+                                                        <p>16</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">جديدة</span>
+                                                        <p>1</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محالة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="session_date_details_side">
+                                                <div>
+                                                    <span class="total_label">
+                                                        <span
+                                                            class="bold_label">الأحكام</span>
+                                                        الإجمالي
+                                                    </span>
+                                                    <p
+                                                        class="the_total_num">0</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">محجوزة</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <span
+                                                            class="regular_label">مد
+                                                            أجل</span>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="main_btn">
+                                            <img src="images/view-icon.svg" alt>
+                                            <span> عرض</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="tab-pane fade"
+                                id="nav-moj"
+                                role="tabpanel"
+                                aria-labelledby="nav-moj-tab">
+                                <div class="row">
+                                    محتوي توزيع الأحكام
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="nav-prosecution"
+                                role="tabpanel"
+                                aria-labelledby="nav-prosecution-tab">
+                                <div class="row">
+                                    محتوي الأحكام المعدلة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>

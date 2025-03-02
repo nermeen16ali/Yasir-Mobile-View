@@ -247,7 +247,7 @@ body:has(.login) .menu-icon {
   width: 24px;
 }
 .menu-icon.active::before {
-  transform: translateY(6px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
 }
 .menu .login_btn {
   transform: translateX(-100px);
@@ -609,6 +609,7 @@ body:not(:has(.login)) .switch_btn {
 }
 .search_group .form-control {
   background-color: rgba(255, 255, 255, 0.85);
+  color: var(--main-dark-color-B);
   width: 100%;
   border: 5px solid #d1dbde;
   border-radius: 38px;
@@ -1197,6 +1198,8 @@ footer .main_footer_copyright {
 }
 .judge {
   position: relative;
+}
+.accordion-header .judge {
   margin-inline-end: 16.5px;
 }
 .judge img {
@@ -1328,15 +1331,24 @@ footer .main_footer_copyright {
   color: var(--main-dark-color-B);
   font-size: 21px;
 }
-.session_status {
+.session_status,
+.inner_session_date {
   box-shadow: 0px 7px 9px 0px rgba(108, 91, 62, 0.05);
   background: rgba(255, 255, 255, 1);
   border-radius: 38px;
+}
+.session_status {
   margin-bottom: 20.28px;
   padding-inline-start: 10px;
   padding-inline-end: 11px;
   padding-bottom: 12px;
   padding-top: 11.22px;
+}
+.inner_session_date {
+  padding: 13.5px 9.28px 10px 10px;
+}
+.inner_session_date:not(:last-child) {
+  margin-bottom: 12.28px;
 }
 .session_details {
   margin-top: 7.5px;
@@ -1346,33 +1358,46 @@ footer .main_footer_copyright {
 .session_indicator {
   padding-inline-start: 8.77px;
 }
-.session_status .main_btn {
+.session_status .main_btn,
+.session_date_details .main_btn {
   width: 100%;
   padding-bottom: 18px;
   padding-top: 10px;
   border-radius: 31px;
-  line-height: 29px;
   font-size: 23px;
+}
+.session_status .main_btn {
+  line-height: 29px;
   margin-top: 19.22px;
+}
+.session_date_details .main_btn {
+  line-height: 26px;
+  margin-top: 13px;
+}
+.session_status .main_btn img,
+.inner_session_date .main_btn img {
+  margin-top: 3px;
 }
 .session_status .main_btn img {
   margin-inline-end: 15.05px;
-  margin-top: 3px;
+}
+.inner_session_date .main_btn img {
+  margin-inline-end: 9.66px;
 }
 .light_gray_text {
   display: block;
   color: var(--text-color);
   font-size: 15px;
   /* margin-bottom: 3.22px; */
-  margin-bottom: 6px;
+  margin-bottom: 3.22px;
   font-weight: 300;
 }
-.session_status h4 {
+.session_items h4 {
   font-size: 19px;
   color: var(--main-dark-color-B);
   font-weight: 400;
 }
-.session_status h5 {
+.session_items h5 {
   color: var(--main-dark-color-B);
   font-size: 17px;
   font-weight: 400;
@@ -1403,4 +1428,182 @@ footer .main_footer_copyright {
 .branch_page .accordion-button:not(.collapsed)::after {
   background-image: url(../images/not-collaspaned-btn-icon.svg);
   transform: rotate(0deg);
+}
+.session_modal .nav-tabs .nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+  border: 0;
+  color: rgba(11, 52, 67, 0.33);
+  padding: 0;
+  padding-inline-end: 18px;
+  padding-bottom: 15px;
+  margin-inline-end: 25px;
+  position: relative;
+  /* padding-bottom: 15px; */
+}
+.session_modal .modal-header {
+  border-bottom: 1px solid #7e929d2b !important;
+}
+.session_modal .nav-tabs .nav-link svg {
+  margin-bottom: 7px;
+}
+.session_modal .nav-tabs {
+  border: 0;
+}
+.session_modal .nav-tabs .nav-link.active {
+  color: #1c3065;
+  border-bottom: 2.5px solid #9a7a44;
+}
+.session_modal .nav-tabs .nav-link svg path {
+  fill: rgba(11, 52, 67, 0.33);
+}
+.session_modal .nav-tabs .nav-link.active svg path {
+  fill: #9a7a44;
+  opacity: 1;
+}
+.session_items .modal-body {
+  padding-top: 16.28px;
+}
+.session_items .modal-body::-webkit-scrollbar {
+  display: none;
+}
+.session_modal_details {
+  padding: 17.29px 19px 11.29px 11px;
+}
+.session_modal_details_inner {
+  margin-bottom: 10px;
+  text-align: center;
+  padding-inline-end: 13px;
+}
+.the_status {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 3px;
+}
+.session_modal_details_inner p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #577c8d;
+  margin-bottom: 4px;
+  font-weight: 300;
+}
+.session_modal_details_inner .the_num {
+  font-size: 20px;
+  line-height: 25px;
+}
+.session_modal_details_inner_bottom > div {
+  flex: 1;
+  text-align: center;
+}
+.the_big_num {
+  font-size: 38px;
+  line-height: 48px;
+  margin-top: 1px;
+}
+.indicator_box {
+  padding-top: 13px;
+  padding-bottom: 21px;
+  border-radius: 23px;
+}
+.indicator_box .status {
+  height: unset;
+  margin-inline: auto;
+}
+.completion_indicator {
+  font-size: 13px;
+  display: block;
+  font-weight: 300;
+  line-height: 16px;
+  color: #0b3443;
+  margin-bottom: 7px;
+}
+.session_date_details {
+  padding: 12.44px 8.72px 16.44px 8.72px;
+}
+.session_date_details {
+  background-color: #ebeff7;
+  border-radius: 38px;
+}
+.the_date {
+  color: var(--main-dark-color-B);
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 21px;
+}
+.inner_session_date .light_gray_text {
+  margin-bottom: 0;
+}
+.total_label {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+}
+.bold_label {
+  font-size: 17px;
+  font-weight: 500;
+  margin-inline-end: 5.7px;
+}
+.session_date_details_side {
+  color: #261905;
+  flex: 1;
+}
+.colored > * {
+  color: #22499c;
+}
+.the_total_num {
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 41px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #22499c17;
+}
+.session_date_details_side.colored {
+  border-inline-end: 2px solid #22499c17;
+}
+.regular_label {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 3px;
+  display: block;
+  padding-top: 8.58px;
+}
+.regular_label + p {
+  font-size: 23px;
+  line-height: 29px;
+}
+.session_modal_details {
+  padding: 17.29px 19px 11.29px 11px;
+  margin-top: 16.21px;
+  border-radius: 28px;
+  margin-bottom: 18.63px;
+}
+.session_modal_details.positive {
+  background: #f8fbf7;
+  border: 1px solid #d6e1cdb5;
+}
+.session_modal_details.positive .indicator_box {
+  background: #e4f2d9;
+}
+.session_modal_details.positive > *:not(.status) {
+  color: #3b6026;
+}
+
+.session_modal_details.negative {
+  background: #faf6f6;
+  border: 1px solid #e4cbca;
+}
+.session_modal_details.negative .indicator_box {
+  background: #efdcdd;
+}
+.session_modal_details.negative > *:not(.status) {
+  color: #631717;
+}
+.modal.session_modal {
+  padding-inline-start: 11.26px;
+  padding-inline-end: 11px;
+  padding-block: 58px;
+}
+.modal-dialog {
+  margin: 0;
 }
