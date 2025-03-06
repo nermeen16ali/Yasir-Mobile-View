@@ -1086,6 +1086,7 @@ footer .main_footer_copyright {
 }
 .modal {
   background-color: rgba(27, 44, 80, 0.28);
+  padding-right: unset;
   padding-inline: 28px;
   padding-block: 111px;
 }
