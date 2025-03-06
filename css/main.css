@@ -1502,7 +1502,7 @@ footer .main_footer_copyright {
   fill: rgba(11, 52, 67, 0.33);
 }
 .session_modal .nav-tabs .nav-link.active svg path {
-  fill: #9a7a44;
+  fill: rgba(154, 122, 68, 1);
   opacity: 1;
 }
 .session_items .modal-body {
