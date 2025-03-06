@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggleIcon.src = isPassword
       ? "images/hidepass.svg"
-      : "images/password_toggle.svg";
+      : "images/password-toggle.svg";
     toggleIcon.alt = isPassword ? "Hide Password" : "Show Password";
   });
 });
