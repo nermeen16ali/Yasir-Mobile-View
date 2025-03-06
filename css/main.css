@@ -819,7 +819,6 @@ footer .main_footer_copyright {
   position: absolute;
   bottom: -24px;
   inset-inline-start: -38px;
-  width: 140%;
 }
 .faq .nav-tabs {
   border-bottom: 0;
@@ -1678,8 +1677,11 @@ footer .main_footer_copyright {
     width: 90%;
     height: unset;
   }
-  .section_heading_1 {
+  .section_heading_1, .services_header .section_heading_ {
     font-size: 36px;
+  }
+  .statistics .section_heading_1{
+    font-size: 40px;
   }
   .large_heading {
     font-size: 42px;
@@ -1692,5 +1694,8 @@ footer .main_footer_copyright {
   }
   .nav_card h3, .nav_card.active h3{
     font-size: 25px;
+  }
+  .faq .highlighted_text img{
+    width: 140%;
   }
 }
