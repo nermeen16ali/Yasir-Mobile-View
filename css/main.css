@@ -1241,9 +1241,6 @@ footer .main_footer_copyright {
   box-shadow: none;
   color: var(--main-dark-color-B);
 }
-.hip_img {
-  transform: translateX(24px);
-}
 .small_section_title {
   font-size: 17px;
   font-weight: 500;
