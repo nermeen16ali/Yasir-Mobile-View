@@ -465,8 +465,12 @@ body:not(:has(.login)) .switch_btn {
   background-size: cover;
   z-index: 2;
 }
-.statistics .section_heading_1 {
+.statistics .section_heading_1{
   color: var(--white-color);
+  font-size: 45px;
+}
+.services_header .section_heading_1 {
+  font-size: 45px;
 }
 /* .statistics .section_heading_2 {
   position: relative;
@@ -502,7 +506,7 @@ body:not(:has(.login)) .switch_btn {
   font-size: 27px;
   line-height: 34px;
   font-weight: 300;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 .stats_item .stats_item_info {
   color: #c7d9e4;
@@ -524,7 +528,6 @@ body:not(:has(.login)) .switch_btn {
 }
 .services_header .highlighted_text img {
   bottom: -19px;
-  width: 103%;
 }
 .services_header {
   padding-bottom: 28px;
@@ -648,7 +651,7 @@ body:not(:has(.login)) .switch_btn {
 }
 .search_group {
   position: relative;
-  margin-top: 32px;
+  margin-top: 46px;
 }
 .search_group .form-control {
   background-color: rgba(255, 255, 255, 0.85);
@@ -816,6 +819,7 @@ footer .main_footer_copyright {
   position: absolute;
   bottom: -24px;
   inset-inline-start: -38px;
+  width: 140%;
 }
 .faq .nav-tabs {
   border-bottom: 0;
@@ -967,6 +971,7 @@ footer .main_footer_copyright {
   letter-spacing: -0.89px;
   font-size: 15px;
   line-height: 18.75px;
+  padding-inline: 4px;
 }
 #openMenuBtn img {
   width: 24px;
@@ -1681,5 +1686,11 @@ footer .main_footer_copyright {
   }
   .highlighted_text img {
     width: 100%;
+  }
+  .contact_boxes{
+    gap: 5px;
+  }
+  .nav_card h3, .nav_card.active h3{
+    font-size: 25px;
   }
 }
