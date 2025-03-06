@@ -1096,6 +1096,19 @@ footer .main_footer_copyright {
   padding-bottom: 19.83px;
   padding-top: 38.6px;
 }
+.autho_lottie {
+  width: 92px;
+  height: 80px;
+  margin-inline: auto;
+}
+#choice2Modal .autho_lottie{
+  margin-top: 18px;
+  margin-bottom: 17.79px;
+}
+#choice1Modal .autho_lottie{
+  margin-top: 13px;
+  margin-bottom: 21.01px;
+}
 .modal_back {
   font-size: 17px;
   color: var(--main-dark-color);
@@ -1179,7 +1192,6 @@ footer .main_footer_copyright {
   margin-bottom: 18px;
 }
 .otp-container {
-  margin-top: 21.01px;
   display: flex;
   align-items: center;
   gap: 3.99px;
