@@ -1087,6 +1087,7 @@ footer .main_footer_copyright {
 .modal {
   background-color: rgba(27, 44, 80, 0.28);
   padding-inline: 28px;
+  padding-block: 111px;
 }
 .modal-content {
   border-radius: 35px;
@@ -1697,5 +1698,8 @@ footer .main_footer_copyright {
   }
   .faq .highlighted_text img{
     width: 140%;
+  }
+  .modal{
+    padding-inline: 12px;
   }
 }
